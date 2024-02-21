@@ -1,0 +1,141 @@
+h2{
+    color: #0068FF;
+    font-family: "Noto Sans CJK KR";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+h6{
+    width: 158px;
+    height: 23.649px;
+    color: #797979;
+    font-family: "Noto Sans CJK KR";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0; /* 기본 마진 제거 */
+    margin-bottom: 5px;
+    padding-bottom: 0px;
+
+}
+
+
+.pb {
+    width: 670px;
+    height: 960px; 
+    padding: 72px 100px; /* 상단 및 하단 패딩 유지, 좌우 패딩 조정 *//* 높이를 최소값으로 설정 */
+    margin: 60px auto; /* 화면 중앙 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid #AACDFF;
+    background: #FFF;
+    box-shadow: 7px 7px 39px 0 rgba(0, 104, 255, 0.25);
+}
+
+
+.contentsWrapper {
+    width: 466px;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 내용 사이의 공간을 균등하게 분배 */
+    
+}
+
+.div{
+    margin-bottom: 20px;
+}
+
+.inputBox{
+    width: 466px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none; /* 모든 테두리를 제거 */
+    border-bottom: 2px solid  #CFCFCF; 
+    outline: none; /* 입력 필드 선택 시 나타나는 기본 윤곽선 제거 */
+    margin-top: 0px; 
+    margin-bottom: 20px;
+    padding-top: 0px; /* 필요에 따라 상단 패딩 조정 */
+}
+
+.radioWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 35px;
+
+
+}
+
+.line {
+    border: none; /* 모든 테두리를 제거 */
+    border-top: 2px solid #E6E6E6;;
+    outline: none; /* 입력 필드 선택 시 나타나는 기본 윤곽선 제거 */
+    margin-top: 0px; /* 상단 마진 제거 */
+    padding-top: 31px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.infoWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-grow: 1;
+
+}
+
+
+
+.agree{
+    color: #0000;
+    font-family: "Noto Sans CJK KR";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+
+#email{
+    width: 466px;
+    height: 40px;
+    flex-shrink: 0;
+    border: none; /* 모든 테두리를 제거 */
+    border-bottom: 1px solid #0068FF; 
+    outline: none; /* 입력 필드 선택 시 나타나는 기본 윤곽선 제거 */
+    margin-top: 0px; /* 상단 마진 제거 */
+    padding-top: 0px; /* 필요에 따라 상단 패딩 조정 */
+}
+
+button{
+    width: 470px;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #0068FF;
+    background: #FFF;
+    margin-top: 31px;
+}
+p{
+    color: #0068FF;
+    text-align: center;
+    font-family: "Noto Sans CJK KR";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

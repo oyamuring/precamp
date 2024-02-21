@@ -1,0 +1,15 @@
+/* styles.css */
+
+body {
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+p {
+    color: navy;
+    font-size: 18px;
+}
