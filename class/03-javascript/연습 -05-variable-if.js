@@ -23,3 +23,72 @@ false || true
 // true
 !true
 // false
+
+
+// 조건문 실습1
+if(1+1 ===2) {
+    
+    console.log("정답입니다")
+} else {
+
+    console.log("틀렸습니다")
+}
+// VM4106:3 정답입니다
+// undefined
+if(true) {
+    
+    console.log("정답입니다")
+} else {
+
+    console.log("틀렸습니다")
+}
+// VM4127:3 정답입니다
+// undefined
+if(!true) {
+    
+    console.log("정답입니다")
+} else {
+
+    console.log("틀렸습니다")
+}
+// VM4135:6 틀렸습니다
+// undefined
+if(0) {
+    
+    console.log("정답입니다")
+} else {
+
+    console.log("틀렸습니다")
+}
+// VM4170:6 틀렸습니다
+// undefined
+if(1) {
+    
+    console.log("정답입니다")
+} else {
+
+    console.log("틀렸습니다")
+}
+// VM4208:3 정답입니다
+// undefined
+
+//조건문 실습2
+
+const profile ={
+    name: "철수",
+    age: 12,
+    school:"다람쥐초등학교"    
+}
+// undefined
+profile
+// {name: '철수', age: 12, school: '다람쥐초등학교'}
+
+if (profile.age >=20) {
+    console.log("성인입니다")
+} else if ( profile.age >=8) {
+    console.log("학생입니다")
+} else if(profile.age >0) {
+    console.log("어린이입니다")
+} else { console.log("잘못 입력하셨습니다.")
+       }
+// VM5033:4 학생입니다
