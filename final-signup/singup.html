@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <link href="./signup.css" rel="stylesheet">
+    <script src="./signup.js"></script>
+</head>
+
+<body>
+    <div class="pb">
+        <div class="contentsWrapper">
+            <div class="info">
+            <h2> 코드캠프 회원가입
+            </h2>
+            </div>
+            <div class="infoWrapper">
+                <div>
+                    <h6>* 이메일</h6>
+                    <input class="inputBox" id="email" type="text" placeholder="이메일을 입력해 주세요.">
+                    <span id="emailError" class="error-message"></span>
+                </div>
+                <div>
+                    <h6>* 이름</h6>
+                    <input class="inputBox" id="name" type="text" placeholder="이름을 입력해 주세요.">
+                    <span id="nameError" class="error-message"></span>
+                </div>
+                <div>
+                    <h6>* 비밀번호</h6>
+                    <input class="inputBox" id="password" type="password" placeholder="비밀번호를 입력해 주세요." >
+                    <span id="confirmPasswordError" class="error-message"></span>
+                </div>
+                <div>
+                    <h6>* 비밀번호 확인</h6>
+                    <input class="inputBox" id="confirmPassword"  type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+                </div>
+            </div>
+            <h6>* 전화번호 입력</h6>
+            <div class="phoneWrapper">
+                <input class="phoneInput" type="text" id="p1" oninput="changeFocus1()" maxlength="3"> -
+                <input class="phoneInput" type="text" id="p2" oninput="changeFocus2()" maxlength="4"> -
+                <input class="phoneInput"type="text" id="p3" oninput="checkValidation()" maxlength="4"> <!-- 인증번호 활성화함수 넣어야 함 -->
+            </div>
+
+            <div class="timerWrapper">
+                <div class="timer__target">
+                <div id="target">000000</div>
+                <button id="phoneButton" disabled="true" onclick="auth()">인증번호 전송</button>
+                </div>
+
+                <div class="timer__finish">
+                <div id="timer">3:00</div>
+                <button id="finish" disabled="true" onclick="finishAuth()">인증확인</button>
+                </div>
+            </div>
+
+            <div class="regionWrapper">
+                <select class="region_select" name = "region__select">
+                    <option selected="selected" disabled="true">지역을 선택하세요</option>  
+                    <option>서울</option>
+                    <option>인천</option>
+                    <option>경기</option>
+                </select>
+                <span id="regionError" class="error-message"></span>
+            </div>
+
+            <div class="genderWrapper">
+                <input class="gender" type="radio" name="gender">여성
+                <input class="gender" type="radio" name="gender">남성
+                <span id="genderError" class="error-message"></span>
+            </div>
+            <div>
+            <!-- <input class="agree" type="checkbox"> 이용약관 개인정보 수집 및 이용, 마케팅 활용 선택에 모두 동의합니다.
+            </div> -->
+            <div class="line">
+                <button id="submit" disabled="true" onclick="final()"><p>가입하기</p></button>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
